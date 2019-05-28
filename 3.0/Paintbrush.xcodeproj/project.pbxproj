@@ -316,11 +316,8 @@
 		594D309F0DFF939E0095E075 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594D309E0DFF939E0095E075 /* Cocoa.framework */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		C2237921168956290033499C /* ETUndoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2237920168956290033499C /* ETUndoObject.m */; };
-		C23D41F31656228900D5F950 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D41F21656228900D5F950 /* BGHUDAppKit.framework */; };
-		C23D41F51656229700D5F950 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D41F41656229700D5F950 /* BGHUDAppKit.framework */; };
 		C23D4204165627EA00D5F950 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D4203165627EA00D5F950 /* Security.framework */; };
 		C23D42081656304500D5F950 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C23D42071656304500D5F950 /* libstdc++.dylib */; };
-		C23D420A1656312A00D5F950 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C23D42091656312A00D5F950 /* BGHUDAppKit.framework */; };
 		C2773F031660B14500B8D64D /* ETLayerManagerPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2773F021660B14500B8D64D /* ETLayerManagerPanel.m */; };
 		C2CC1E5B16FBFB8900D032CA /* rotate_inside.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC1E5816FBFB8900D032CA /* rotate_inside.png */; };
 		C2CC1E5C16FBFB8900D032CA /* rotate_None.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC1E5916FBFB8900D032CA /* rotate_None.png */; };
@@ -416,6 +413,8 @@
 		CEFC0595162C0384009FE240 /* curves.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC0588162C0384009FE240 /* curves.png */; };
 		CEFC0596162C0384009FE240 /* airbrushs.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFC0589162C0384009FE240 /* airbrushs.png */; };
 		CEFC90B01622A3DB00B23A22 /* ETLayerTextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC90AF1622A3DB00B23A22 /* ETLayerTextFieldController.m */; };
+		D737F3822298B39900754BF1 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D737F3812298B39800754BF1 /* BGHUDAppKit.framework */; };
+		D737F3832299393E00754BF1 /* BGHUDAppKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = C23D41F41656229700D5F950 /* BGHUDAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -428,14 +427,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		274A6B140BAB4ABD00033B75 /* CopyFiles */ = {
+		274A6B140BAB4ABD00033B75 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C23D420A1656312A00D5F950 /* BGHUDAppKit.framework in CopyFiles */,
+				D737F3832299393E00754BF1 /* BGHUDAppKit.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -624,11 +624,9 @@
 		8D15AC370486D014006FF6A4 /* My PaintBrush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My PaintBrush.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C223791F168956280033499C /* ETUndoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETUndoObject.h; path = Source/ETUndoObject.h; sourceTree = "<group>"; };
 		C2237920168956290033499C /* ETUndoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETUndoObject.m; path = Source/ETUndoObject.m; sourceTree = "<group>"; };
-		C23D41F21656228900D5F950 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Frameworks/BGHUDAppKit.framework; sourceTree = "<group>"; };
 		C23D41F41656229700D5F950 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Frameworks/BGHUDAppKit.framework; sourceTree = "<group>"; };
 		C23D4203165627EA00D5F950 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C23D42071656304500D5F950 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/usr/lib/powerpc-apple-darwin10/4.2.1/libstdc++.dylib"; sourceTree = DEVELOPER_DIR; };
-		C23D42091656312A00D5F950 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Frameworks/BGHUDAppKit.framework; sourceTree = "<group>"; };
 		C2773F011660B14500B8D64D /* ETLayerManagerPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLayerManagerPanel.h; sourceTree = "<group>"; };
 		C2773F021660B14500B8D64D /* ETLayerManagerPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLayerManagerPanel.m; sourceTree = "<group>"; };
 		C2CC1E5816FBFB8900D032CA /* rotate_inside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rotate_inside.png; path = Resources/rotate_inside.png; sourceTree = "<group>"; };
@@ -736,6 +734,7 @@
 		CEFC0589162C0384009FE240 /* airbrushs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airbrushs.png; path = Resources/airbrushs.png; sourceTree = "<group>"; };
 		CEFC90AE1622A3DA00B23A22 /* ETLayerTextFieldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLayerTextFieldController.h; sourceTree = "<group>"; };
 		CEFC90AF1622A3DB00B23A22 /* ETLayerTextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLayerTextFieldController.m; sourceTree = "<group>"; };
+		D737F3812298B39800754BF1 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Frameworks/BGHUDAppKit.framework; sourceTree = "<group>"; };
 		D747635222939D380069A23A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -763,10 +762,9 @@
 			files = (
 				C23D42081656304500D5F950 /* libstdc++.dylib in Frameworks */,
 				C23D4204165627EA00D5F950 /* Security.framework in Frameworks */,
-				C23D41F31656228900D5F950 /* BGHUDAppKit.framework in Frameworks */,
 				594D309F0DFF939E0095E075 /* Cocoa.framework in Frameworks */,
 				273E0B6E0E32FC2200D11815 /* QuartzCore.framework in Frameworks */,
-				C23D41F51656229700D5F950 /* BGHUDAppKit.framework in Frameworks */,
+				D737F3822298B39900754BF1 /* BGHUDAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,10 +1153,9 @@
 		2A37F4AAFDCFA73011CA2CEA /* Paintbrush */ = {
 			isa = PBXGroup;
 			children = (
-				C23D42091656312A00D5F950 /* BGHUDAppKit.framework */,
+				D737F3812298B39800754BF1 /* BGHUDAppKit.framework */,
 				C23D42071656304500D5F950 /* libstdc++.dylib */,
 				C23D4203165627EA00D5F950 /* Security.framework */,
-				C23D41F21656228900D5F950 /* BGHUDAppKit.framework */,
 				18D4F3DC163297AE00E66789 /* My PaintBrush.entitlements */,
 				27A60E100B879A6A0091A1B0 /* Classes */,
 				2706B81E10ED700000080D4A /* Tests */,
@@ -1323,7 +1320,7 @@
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
-				274A6B140BAB4ABD00033B75 /* CopyFiles */,
+				274A6B140BAB4ABD00033B75 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -2065,10 +2062,10 @@
 		C05733C808A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "My PaintBrush.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 3.0.0;
 				DEVELOPMENT_TEAM = DLLMLEQZR8;
@@ -2079,8 +2076,9 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
-					"\"$(SRCROOT)\"",
-					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"$(SRCROOT)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
@@ -2093,7 +2091,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Resources/Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/powerpc-apple-darwin10/4.2.1\"",
@@ -2105,6 +2103,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WRAPPER_EXTENSION = app;
@@ -2115,10 +2114,10 @@
 		C05733C908A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "My PaintBrush.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3.0.0;
 				DEVELOPMENT_TEAM = DLLMLEQZR8;
 				DSTROOT = "/tmp/$(TARGET_NAME).dst";
@@ -2128,8 +2127,9 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
-					"\"$(SRCROOT)\"",
-					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"$(SRCROOT)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_ALTIVEC_EXTENSIONS = YES;
@@ -2143,7 +2143,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Resources/Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/powerpc-apple-darwin10/4.2.1\"",
@@ -2154,6 +2154,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WRAPPER_EXTENSION = app;
@@ -2163,7 +2164,7 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 3;
@@ -2175,9 +2176,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(PROJECT_DIR)/../builds/3.0/";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				VERSION_INFO_SUFFIX = "";
@@ -2187,7 +2190,7 @@
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				GCC_ENABLE_OBJC_GC = supported;
@@ -2199,9 +2202,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
 				SYMROOT = "$(PROJECT_DIR)/../builds/3.0/";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				VERSION_INFO_SUFFIX = "";
