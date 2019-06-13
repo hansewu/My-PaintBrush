@@ -10,7 +10,6 @@
 #import "SWDocument.h"
 #import "SWAppController.h"
 #define ETPASTETYPE  @"ETPASTETYPE"
-// #import "ETLayerController.h"
 @interface ETLayerController ()
 
 @end
